@@ -1,9 +1,5 @@
 # guac-install
 
-I've maintained this script for quite a few years now with the help of the other contributors and it seems to be getting more and more fragmented as libraries and system OSes diverge in their package management. I do **not** plan on maintaining this beyond perhaps approving other people's PRs and letting people continue to discuss issues, so I won't archive it but I'm also not actively maintaining it 🤷‍♂️
-
-You can also check out this other [Guacamole-Setup](https://github.com/itiligent/Guacamole-Setup) repo which sets up a complete **Virtual Desktop/Jump Server appliance with MFA, Active Directory integration & Nginx SSL reverse proxy** for more inspiration.
-
 ## NOTE: The fixes below are not to be used UNLESS you're having issues, don't run these for no reason, use the distro maintainers version unless there's a reason not to.
 
 ## NOTE: Ubuntu users having issues with RDP have reported the following fix:
@@ -174,4 +170,3 @@ Guacamole only supports ssh-dss and ssh-rsa, and both have been disabled in Ubun
 In the meantime a workaround is adding ```HostKeyAlgorithms +ssh-rsa``` to the end of ``` /etc/ssh/sshd_config ``` on the Ubuntu machine and restart sshd. 
 
 ###### :warning: use at your own risk! :warning:
-
